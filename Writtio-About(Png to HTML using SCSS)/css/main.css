@@ -1,0 +1,214 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+    font-family: "ProximaNova";
+    src: url("./fonts/ProximaNova-Regular.eot"); /* IE9 Compat Modes */
+    src: url("./fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("./fonts/ProximaNova-Regular.otf") format("opentype"), /* Open Type Font */
+      url("./fonts/ProximaNova-Regular.svg") format("svg"), /* Legacy iOS */
+      url("./fonts/ProximaNova-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("./fonts/ProximaNova-Regular.woff") format("woff"), /* Modern Browsers */
+      url("./fonts/ProximaNova-Regular.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: "ProximaNova"!important;
+}
+.header {
+    margin: 20px 20px;
+}
+.__header{
+    background-color: white;
+    box-shadow: 0 5px 5px 5px rgba(100,100,100,0.1);
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+.content-wrapper {
+    max-width: 1200px;
+    padding: 1rem;
+    margin: auto!important;
+}
+.navbar-brand {
+    margin-right: 10%!important;
+}
+.navbar-nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-link {
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 160%;
+}
+.center {
+    text-align: center;
+}
+.__About {
+    padding-top: 120px;
+}
+.__image {
+    width: 100%;
+    padding: 5%;
+}
+.__image_arrow {
+    width: 16px;
+    margin: 5px;
+}
+.__image_arrow:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.__white {
+    color: white;
+}
+.__button {
+    color: white!important;
+    background-color: #69c9d6;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    width: 150px;
+    height: 41px;
+}
+.__button_outlined {
+    color: #69c9d6!important;
+    background-color: white;
+    border: solid 2px #69c9d6;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;
+    height: 41px;
+}
+.__button_outlined:hover, .__button:hover {
+    opacity: 0.8;
+}
+.__About_container{
+    max-width: 400px;
+}
+.__OUR_STORY {
+    font-size: 0.8rem;
+    color:#69c9d6;
+}
+.__Title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.__Description {
+    font-size: 1rem;
+    color: #222222;
+}
+.__Philosophy {
+    background-color: #f8f9ff;
+}
+.__SubTitle {
+    font-size: 2rem;
+    font-weight: 800;
+    color:#7480ff;
+}
+.card-container {
+    max-width: 850px;
+    margin: auto!important;
+}
+.__card {
+    background-color: white;
+    padding: 7% 5%;
+    margin:10px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px 10px rgba(100,100,100,0.1);
+}
+.__card_title{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.__card_description{
+    font-size: 1rem;
+    color:#222222;
+}
+.member-container {
+    max-width: 1000px;
+    margin: auto!important;
+}
+.__member {
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px 10px rgba(100,100,100,0.2);
+    margin:30px 10px;
+    padding:10%
+}
+.__photo_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.__member_name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.__member_position {
+    color: #7480ff;
+}
+.__member_description {
+    color: #222222;
+}
+.__Growing {
+    background-color: #7480ff;
+}
+.white{
+    color:white;
+}
+.__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+.__flex__around {
+    display: flex;
+    justify-content: space-between;
+}
+.__footer_link {
+    margin: 0 10px;
+}
+.__Privacy_container {
+    max-width: 500px;
+    padding: 10% 5%;
+}
+.__Growing_right_container {
+    max-width: 400px;
+}
+.__Getting_started {
+    background-color: white;
+    box-shadow: 0px 5px 5px 5px rgba(200,200,200,0.2);
+    border-radius: 5px;
+    max-width: 1000px;
+    padding: 30px 10px;
+    margin: -50px auto 50px auto!important;
+    z-index: 2;
+}
+.__Getting__ {
+    margin: 0px;
+}
+.__buttons_container {
+    display: flex;
+    justify-content: space-around;
+}
+.__secfooter {
+    background-color: #353535;
+}
+.__secfooter > p {
+    color: white;
+}
+.__footer_bottom {
+    padding-top: 20px;
+    border-top: 1px solid #64646480;
+}
+.__footer_bottom > div {
+    margin: 10px 0;
+}
+.__footer_bottom_hello_writtio {
+    color: #7480ff;
+}

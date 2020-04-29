@@ -1,0 +1,229 @@
+$fontFamily: "ProximaNova";
+$buttonColor:#69c9d6;
+$descriptionColor:#222222;
+$subTitleColor:#7480ff;
+$boxShadow:0px 10px 10px 10px rgba(100,100,100,0.1);
+$hoverOpacity:0.8;
+$bold:800;
+$miniBold:600;
+$footerColor:#353535;
+$footerBorder:1px solid #64646480;
+$titleFontSize:2rem;
+$cart_member_TitleSize:1.2rem;
+$storyLinkSize:0.8rem;
+$card_member_BorderRadius:10px;
+$buttonBorderRadius:5px;
+/* font converted using font-converter.net. thank you! */
+@font-face {
+    font-family: "ProximaNova";
+    src: url("./fonts/ProximaNova-Regular.eot"); /* IE9 Compat Modes */
+    src: url("./fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("./fonts/ProximaNova-Regular.otf") format("opentype"), /* Open Type Font */
+      url("./fonts/ProximaNova-Regular.svg") format("svg"), /* Legacy iOS */
+      url("./fonts/ProximaNova-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("./fonts/ProximaNova-Regular.woff") format("woff"), /* Modern Browsers */
+      url("./fonts/ProximaNova-Regular.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: "ProximaNova"!important;
+}
+.header {
+    margin: 20px 20px;
+}
+.__header{
+    background-color: white;
+    box-shadow: $boxShadow;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+.content-wrapper {
+    max-width: 1200px;
+    padding: 1rem;
+    margin: auto!important;
+}
+.navbar-brand {
+    margin-right: 10%!important;
+}
+.navbar-nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-link {
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 160%;
+}
+.center {
+    text-align: center;
+}
+.__About {
+    padding-top: 120px;
+}
+.__image {
+    width: 100%;
+    padding: 5%;
+}
+.__image_arrow {
+    width: 16px;
+    margin: 5px;
+}
+.__image_arrow:hover {
+    cursor: pointer;
+    opacity: $hoverOpacity;
+}
+.__white {
+    color: white;
+}
+.__button {
+    color: white!important;
+    background-color: $buttonColor;
+    border-radius: $buttonBorderRadius;
+    border: none;
+    text-align: center;
+    width: 150px;
+    height: 41px;
+}
+.__button_outlined {
+    color: $buttonColor!important;
+    background-color: white;
+    border: solid 2px $buttonColor;
+    border-radius: $buttonBorderRadius;
+    text-align: center;
+    width: 150px;
+    height: 41px;
+}
+.__button_outlined:hover, .__button:hover {
+    opacity: $hoverOpacity;
+}
+.__About_container{
+    max-width: 400px;
+}
+.__OUR_STORY {
+    font-size: $storyLinkSize;
+    color: $buttonColor;
+}
+.__Title {
+    font-size: $titleFontSize;
+    font-weight: $miniBold;
+}
+.__Description {
+    font-size: 1rem;
+    color: $descriptionColor;
+}
+.__Philosophy {
+    background-color: #f8f9ff;
+}
+.__SubTitle {
+    font-size: $titleFontSize;
+    font-weight: $bold;
+    color:$subTitleColor;
+}
+.card-container {
+    max-width: 850px;
+    margin: auto!important;
+}
+.__card {
+    background-color: white;
+    padding: 7% 5%;
+    margin:10px auto;
+    max-width: 400px;
+    border-radius: $card_member_BorderRadius;
+    box-shadow: $boxShadow;
+}
+.__card_title{
+    font-size: $cart_member_TitleSize;
+    font-weight: $miniBold;
+}
+.__card_description{
+    font-size: 1rem;
+    color:$descriptionColor;
+}
+.member-container {
+    max-width: 1000px;
+    margin: auto!important;
+}
+.__member {
+    border-radius: $card_member_BorderRadius;
+    box-shadow: $boxShadow;
+    margin:30px 10px;
+    padding:10%
+}
+.__photo_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.__member_name {
+    font-size: $cart_member_TitleSize;
+    font-weight: $miniBold;
+}
+.__member_position {
+    color: $subTitleColor;
+}
+.__member_description {
+    color: $descriptionColor;
+}
+.__Growing {
+    background-color: $subTitleColor;
+}
+.white{
+    color:white;
+}
+.__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+.__flex__around {
+    display: flex;
+    justify-content: space-between;
+}
+.__footer_link {
+    margin: 0 10px;
+}
+.__Privacy_container {
+    max-width: 500px;
+    padding: 10% 5%;
+}
+.__Growing_right_container {
+    max-width: 400px;
+}
+.__Getting_started {
+    background-color: white;
+    box-shadow: $boxShadow;
+    border-radius: $buttonBorderRadius;
+    max-width: 1000px;
+    padding: 30px 10px;
+    margin: -50px auto 50px auto!important;
+    z-index: 2;
+}
+.__Getting__ {
+    margin: 0px;
+}
+.__buttons_container {
+    display: flex;
+    justify-content: space-around;
+}
+.__secfooter {
+    background-color: $footerColor;
+}
+.__secfooter > p {
+    color: white;
+}
+.__footer_bottom {
+    padding-top: 20px;
+    border-top: $footerBorder;
+}
+.__footer_bottom > div {
+    margin: 10px 0;
+}
+.__footer_bottom_hello_writtio {
+    color: $subTitleColor;
+}
