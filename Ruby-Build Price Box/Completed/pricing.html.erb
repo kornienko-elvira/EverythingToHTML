@@ -1,0 +1,46 @@
+<%= render 'shared/header' %>
+
+<% content_for :title, I18n.t('views.pages.pricing.title') %>
+
+<main id="content">
+  <div class="container" align="center">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h1><%= I18n.t('views.pages.pricing.title') %></h1>
+        <h6 class="large-text mt-2"><%= I18n.t('views.pages.pricing.subtitle') %></h6>
+      </div>
+    </div>
+    <div class="row mt-5 pt-3 justify-content-center">
+      <div class="col-lg-4">
+        <%= link_to I18n.t('views.pages.pricing.links.done_by_expert'), caption_subtitle_translator_services_path, class: 'btn btn-secondary mb-4' %>
+      </div>
+      <div class="col-lg-4">
+        <%= link_to I18n.t('views.pages.pricing.links.automatic_subtitling'), add_automatic_caption_subtitle_path, class: 'btn btn-secondary mb-4' %>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/pricing_plan' %>
+  <%= render 'shared/clients', title: I18n.t('views.pages.pricing.join_users') %>
+  <%= render 'shared/calculator' %>
+
+  <%= render 'shared/faq' %>
+</main>
+
+<%= render 'shared/footer' %>
+
+<script>
+  $("#length, #video_language, #caption_language").change(function(){
+    updateBackground()
+  })
+
+  function updateBackground(){
+    let scale = $("#video_language").val().length / $("#caption_language").val().length * $("#length").val()
+    if (scale < 0.6) { scale = 0.6 }
+    if (scale > 1.2) { scale = 1.2 }
+
+    $(".p1").css("transform", "scale(" + scale + ")")
+  }
+
+  window.VIDEO_PRICE_URL = "<%= price_videos_url %>";
+  window.VIDEO_NEW_URL = "<%= new_video_path %>";
+</script>

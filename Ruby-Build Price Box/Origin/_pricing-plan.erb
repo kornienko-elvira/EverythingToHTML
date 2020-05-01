@@ -1,0 +1,188 @@
+<div class="pricing-plans-wrapper">
+  <div class="text-center text-18 py-5 d-none d-md-block">
+  Use our automatic subtitling platform.
+  </div>
+
+  <!-- FREE PLAN -->
+  <div class="pricing-plans container px-0 d-md-flex justify-content-md-center">
+    <div class="pricing-plan">
+      <div class="pricing-plan__header">Free</div>
+      <span class="text-muted text-small">&nbsp;</span>
+      <div class="pricing-plan__price">
+        <div class="pricing-plan__price-amount">0<span class="perMinute">/minute</span>
+        </div>
+      </div>
+      <p>Get free caption for your videos under 1 minute.</p>
+      <%= link_to(I18n.t('views.pages.pricing.plans.basic.start_now'), credits_topup_path, class: 'btn btn-secondary pricing-button my-4') %>
+      <div class="pricing-plan__features pricing-plan__features--hidden">
+        <span class="text-muted text-small">
+        What's included: </span>
+        <ul>
+          <li class="data-tooltip" data-tippy-content="Take advantage of our platform and our exclusive automatic subtitling methodology.">
+            <span>Automatic captionning</span>
+          </li>
+          <li class="data-tooltip" data-tippy-content="Export a new version of your video by embedding subtitles in the image">
+          <span>Video exportation with your captions</span>
+          </li>
+          <li class="data-tooltip" data-tippy-content="Customize the font, size and color of your subtitles.">
+            <span>Custom subtitle style</span>
+          </li>
+        </ul>
+        <span class="text-muted text-small">
+        Limitations: </span>
+        <ul>
+          <li class="data-tooltip" data-tippy-content="Your video must be less than 300 Mb.">
+            <span>Maximum file size:<br />300 Mb</span>
+          </li>
+          <li class="data-tooltip" data-tippy-content="The duration of your video cannot exceed 1 minute.">
+            <span>Maximum video length:<br />1 minute</span>
+          </li>
+          <li class="data-tooltip" data-tippy-content="A small logo is added on the first and last 10 seconds of your video.">
+            <span>Watermark on the exportation</span>
+          </li>
+          <li class="data-tooltip" data-tippy-content="It is not possible for you to get the source files of your captions.">
+          <span>No access to source files (SRT, VTT,...)</span>
+          </li>
+      </div>
+      <a class="pricing-plan__more d-md-none" href="#">
+        <span class="show">See what’s included</span>
+        <span class="hide">Hide details</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ESSENTIAL PLAN -->
+  <div class="pricing-plans container px-0 d-md-flex justify-content-md-center">
+    <div class="pricing-plan">
+      <div class="pricing-plan__header">Essential</div>
+      <span class="text-muted text-small">&nbsp;</span>
+      <div class="pricing-plan__price">
+        <div class="pricing-plan__price-amount">0.20<span class="perMinute">/minute</span>
+        </div>
+      </div>
+      <p>Take advantage of a very attractive price in exchange for sharing our logo.</p>
+      <%= link_to(I18n.t('views.pages.pricing.plans.essential.buy'), credits_topup_path, class: 'btn btn-secondary pricing-button my-4') %>
+      <div class="pricing-plan__features pricing-plan__features--hidden">
+        <span class="text-muted text-small">
+        What's included: </span>
+        <ul>
+          <li class="data-tooltip" data-tippy-content="Take advantage of our platform and our exclusive automatic subtitling methodology.">
+            <span>Automatic captionning</span>
+          </li>
+          <li class="data-tooltip" data-tippy-content="Take advantage of machine translation in English, French, Spanish, Portuguese, German, Dutch, Italian, Polish, and Russian">
+            <span>Automatic translation</span>
+          </li>
+          <li class="data-tooltip" data-tippy-content="Export a new version of your video by embedding subtitles in the image">
+          <span>Video exportation with your subtitles</span>
+          </li>
+          <li class="data-tooltip" data-tippy-content="Customize the font, size and color of your subtitles.">
+            <span>Custom subtitle style</span>
+          </li>
+          <li class="data-tooltip" data-tippy-content="You can download the source files. We add a subtitle that says -- subtitled with Checksub.com --">
+          <span>Download the SRT and VTT file with mention</span>
+          </li>
+          <li class="data-tooltip" data-tippy-content="There is no limit to the length of your video.">
+            <span>No video duration limit</span>
+          </li>
+        </ul>
+        <span class="text-muted text-small">
+        Limitations: </span>
+        <ul>
+          <li class="data-tooltip" data-tippy-content="Your video must be less than 300 Mb.">
+            <span>Maximum file size:<br />4 Go</span>
+          </li>
+          <li class="data-tooltip" data-tippy-content="A small logo is added on the first and last 10 seconds of your video.">
+            <span>Watermark on the exportation</span>
+          </li>
+          <li class="data-tooltip" data-tippy-content="Like in movie credits, we add a subtitle that says -- subtitled with checksub.com -- at the beginning or the end of your video">
+            <span>Mention in the source file</span>
+          </li>
+      </div>
+      <a class="pricing-plan__more d-md-none" href="#">
+        <span class="show">See what’s included</span>
+        <span class="hide">Hide details</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- PLUS PLAN -->
+  <div class="pricing-plans container px-0 d-md-flex justify-content-md-center">
+    <div class="pricing-plan">
+      <div class="pricing-plan__header">Plus</div>
+      <span class="text-muted text-small">&nbsp;</span>
+      <div class="pricing-plan__price">
+        <div class="pricing-plan__price-amount">0.60<span class="perMinute">/minute</span>
+        </div>
+      </div>
+      <p>Expand your audience with automatic captioning and subtitling.</p>
+      <%= link_to(I18n.t('views.pages.pricing.plans.premium.buy'), credits_topup_path, class: 'btn btn-secondary pricing-button my-4') %>
+      <div class="pricing-plan__features pricing-plan__features--hidden">
+        <span class="text-muted text-small">
+        What's included: </span>
+        <ul>
+          <li class="data-tooltip" data-tippy-content="Take advantage of our platform and our exclusive automatic subtitling methodology.">
+            <span>Automatic captionning</span>
+          </li>
+          <li class="data-tooltip" data-tippy-content="Take advantage of machine translation in English, French, Spanish, Portuguese, German, Dutch, Italian, Polish, and Russian">
+            <span>Automatic translation</span>
+          </li>
+          <li class="data-tooltip" data-tippy-content="Export a new version of your video by embedding subtitles in the image">
+          <span>Video exportation with your subtitles</span>
+          </li>
+          <li class="data-tooltip" data-tippy-content="Customize the font, size and color of your subtitles.">
+            <span>Custom subtitle style</span>
+          </li>
+          <li class="data-tooltip" data-tippy-content="You can download the source files without watermark or mention.">
+          <span>Download the SRT and VTT file</span>
+          </li>
+          <li class="data-tooltip" data-tippy-content="There is no limit to the length of your video.">
+            <span>No video duration limit</span>
+          </li>
+        </ul>
+        <span class="text-muted text-small">
+        Limitations: </span>
+        <ul>
+          <li class="data-tooltip" data-tippy-content="Your video must be less than 300 Mb.">
+            <span>Maximum file size:<br />4 Go</span>
+          </li>
+      </div>
+      <a class="pricing-plan__more d-md-none" href="#">
+        <span class="show">See what’s included</span>
+        <span class="hide">Hide details</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- PROFESSIONAL PLAN -->
+  <div class="pricing-plan">
+    <div class="pricing-plan__header individual-plan">Professional </a>
+    </div>
+    <span class="text-muted text-small">&nbsp;</span>
+    <div class="pricing-plan__price">
+      <div class="pricing-plan__price-amount-custom">Custom price</span></div>
+    </div>
+      <p>Professional plan<br /> to meet your <br />business needs.</p>
+    <div id="enterprise-pricing-btn" class="btn-try" style="cursor:pointer">
+    Contact Us </div>
+    <div class="pricing-plan__features pricing-plan__features--hidden">
+      <span class="text-muted text-small">
+      What's included: </span>
+      <ul>
+        <li>
+          <span class="all-free d-md-inline">All Plus Features</span>
+        </li>
+        <li><span class="feature-plus">+</span></li>
+        <li>
+          <span class="all-free d-md-inline">Specific integration</span>
+        </li>
+        <li><span class="feature-plus">+</span></li>
+        <li class="data-tooltip" data-tippy-content="From about 20 hours of captioning and subtitling per month.">
+          <span>From 20 hours of subtitling per month</span>
+        </li>
+        <li class="data-tooltip" data-tippy-content="Contact us to learn more.">
+          <span>And more</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
