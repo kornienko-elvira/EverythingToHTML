@@ -21,7 +21,7 @@ Then, you can process items from your event source in 3 ways:
 + Access items in batch using Pipedream's REST API
 To get started, [**create a new RSS source in the Pipedream UI**](https://pipedream.com/sources?action=create&url=https%3A%2F%2Fgithub.com%2FPipedreamHQ%2Fpipedream%2Fblob%2Fmaster%2Fcomponents%2Frss%2Frss.js&app=none). Name the source and add your feed URL:
 
-![image](https://rss.pipedream.com/img/rss-source-in-ui.2832e34f.png)
+![image](https://rss.pipedream.com/img/rss-source-in-ui.2832e34f.png){:height="50%" width="50%"}
 
 You can also visit **https://pipedream.com/sourcesand** click theCreate Sourcebutton, then choose the rss/rss.js source from the modal that appears.
 
