@@ -22,7 +22,7 @@ Then, you can process items from your event source in 3 ways:
 To get started, [**create a new RSS source in the Pipedream UI**](https://pipedream.com/sources?action=create&url=https%3A%2F%2Fgithub.com%2FPipedreamHQ%2Fpipedream%2Fblob%2Fmaster%2Fcomponents%2Frss%2Frss.js&app=none). Name the source and add your feed URL:
 
 <p align="center">
-    <img  alt="RSS Source" width="80%" src="https://rss.pipedream.com/img/rss-source-in-ui.2832e34f.png">
+    <img  alt="RSS Source" width="672" src="https://rss.pipedream.com/img/rss-source-in-ui.2832e34f.png">
 </p>
 
 You can also visit **https://pipedream.com/sourcesand** click theCreate Sourcebutton, then choose the rss/rss.js source from the modal that appears.
@@ -57,7 +57,9 @@ Workflows are linear sequences of steps — just Node.js code —hosted and run 
 
 If you already created RSS source, and want to run a workflow on that same feed, you can click the **Select Another Trigger** button and choose from any event source already running in your account.
 
-![image](https://rss.pipedream.com/img/select-another-trigger.c6bdbbb5.png)
+<p align="center">
+    <img  alt="RSS Source" width="672" src="https://rss.pipedream.com/img/select-another-trigger.c6bdbbb5.png">
+</p>
 
 They should work as is, but you can modify them in any way. For example, you can add a step to [**run any Node.js code**](https://docs.pipedream.com/workflows/steps/code/) or use [**pre-built functions**](https://docs.pipedream.com/workflows/steps/actions/) to send data to other destinations.
 
@@ -106,5 +108,10 @@ Please [**reach out**](https://docs.pipedream.com/support/) with any questions o
 
 ___
 
-<p align="center">Pipedream, Inc. — San Francisco, CA                                <p align="right"> [Twitter](https://twitter.com/PipedreamHQ)  [Community](https://pipedream.com/community)  [Docs](https://docs.pipedream.com/) [Terms](https://pipedream.com/terms) [Privacy](https://pipedream.com/privacy)
+<p align="center">
+Pipedream, Inc. — San Francisco, CA
+</p>
+<p align="center">
+<a href="https://twitter.com/PipedreamHQ">Twitter</a>  <a href="https://pipedream.com/community">Community</a>  <a href="https://docs.pipedream.com/">Docs</a> <a href="https://pipedream.com/terms">Terms</a> <a href="https://pipedream.com/privacy">Privacy</a>
+</p>
 
