@@ -1,5 +1,6 @@
 <h1 align="center"><strong>RSS for Hackers</strong></h1>
-Patterns for processing and producing RSS feeds
+    
+<p align="center">Patterns for processing and producing RSS feeds</p>
 
 ## Getting Started
 If you want to process an RSS feed programmatically, you have to run code to poll the feed and keep track of items already processed. This isn't hard to write, but it's often not core to your app's logic. **You probably just want to run code on each new item in the feed.**
@@ -22,7 +23,7 @@ Then, you can process items from your event source in 3 ways:
 To get started, [**create a new RSS source in the Pipedream UI**](https://pipedream.com/sources?action=create&url=https%3A%2F%2Fgithub.com%2FPipedreamHQ%2Fpipedream%2Fblob%2Fmaster%2Fcomponents%2Frss%2Frss.js&app=none). Name the source and add your feed URL:
 
 <p align="center">
-    <img  alt="RSS Source" width="672" src="https://rss.pipedream.com/img/rss-source-in-ui.2832e34f.png">
+    <kbd><img  alt="RSS Source" width="672" src="https://rss.pipedream.com/img/rss-source-in-ui.2832e34f.png"></kbd>
 </p>
 
 You can also visit **https://pipedream.com/sourcesand** click theCreate Sourcebutton, then choose the rss/rss.js source from the modal that appears.
@@ -48,7 +49,7 @@ $ pd events -f sample-feed# Tail the feed in real time
 Then, you can trigger a Pipedream workflow— a serverless Node.js script — on every event:
 
 <p align="center">
-    <img  alt="RSS Source" width="672" src="https://rss.pipedream.com/img/new-workflow-source.9580d516.png">
+    <kbd><img  alt="RSS Source" width="672" src="https://rss.pipedream.com/img/new-workflow-source.9580d516.png"></kbd>
 </p>
 
 or process items in your own app using [**the SSE stream or REST API**](https://rss.pipedream.com/#apis) tied to your source.
@@ -62,7 +63,7 @@ Workflows are linear sequences of steps — just Node.js code —hosted and run 
 If you already created RSS source, and want to run a workflow on that same feed, you can click the **Select Another Trigger** button and choose from any event source already running in your account.
 
 <p align="center">
-    <img  alt="RSS Source" width="672" src="https://rss.pipedream.com/img/select-another-trigger.c6bdbbb5.png">
+    <kbd><img  alt="RSS Source" width="672" src="https://rss.pipedream.com/img/select-another-trigger.c6bdbbb5.png"></kbd>
 </p>
 
 They should work as is, but you can modify them in any way. For example, you can add a step to [**run any Node.js code**](https://docs.pipedream.com/workflows/steps/code/) or use [**pre-built functions**](https://docs.pipedream.com/workflows/steps/actions/) to send data to other destinations.
@@ -106,10 +107,10 @@ Note the?n=1query string. You can vary the number of events returned (most recen
 ## Questions or Feedback?
 
 Please [**reach out**](https://docs.pipedream.com/support/) with any questions or feedback. We're happy to add other RSS-specific developer resources to this list, and we'd love to hear what can be improved about event sources or the example workflows.
-
-
-
-
+    
+    
+    
+    
 ___
 
 <p align="center">
@@ -118,4 +119,3 @@ Pipedream, Inc. — San Francisco, CA
 <p align="center">
 <a href="https://twitter.com/PipedreamHQ">Twitter</a>  <a href="https://pipedream.com/community">Community</a>  <a href="https://docs.pipedream.com/">Docs</a> <a href="https://pipedream.com/terms">Terms</a> <a href="https://pipedream.com/privacy">Privacy</a>
 </p>
-
