@@ -10,7 +10,7 @@
     <a "SSE + REST API" href="#sse-and-rest-apis"><img width="30%" src="./RSS/RestApi.png"></a>
 </p>
 
-
+&nbsp;&nbsp;
 ## Getting Started
 If you want to process an RSS feed programmatically, you have to run code to poll the feed and keep track of items already processed. This isn't hard to write, but it's often not core to your app's logic. **You probably just want to run code on each new item in the feed.**
 
@@ -67,7 +67,7 @@ Then, you can trigger a Pipedream workflow— a serverless Node.js script — on
 
 or process items in your own app using [**the SSE stream or REST API**](https://rss.pipedream.com/#apis) tied to your source.
 
-
+&nbsp;&nbsp;
 ## Example Workflows
 Workflows are linear sequences of steps — just Node.js code —hosted and run by Pipedream.
 
@@ -96,6 +96,7 @@ They should work as is, but you can modify them in any way. For example, you can
     <a alt="RSS to Browserless to S3" href="https://pipedream.com/@dylburger/rss-to-browserless-to-s3-p_95Cv5z/readme"><img width="40%" src="./RSS/12.png"></a>
 </p>
 
+&nbsp;&nbsp;
 ## SSE and REST APIs
 
 Pipedream provides two other interfaces for accessing events produced by sources:
@@ -136,8 +137,8 @@ Note the?n=1query string. You can vary the number of events returned (most recen
 Please [**reach out**](https://docs.pipedream.com/support/) with any questions or feedback. We're happy to add other RSS-specific developer resources to this list, and we'd love to hear what can be improved about event sources or the example workflows.
     
     
-    
-    
+&nbsp;&nbsp;    
+&nbsp;&nbsp;    
 ___
 
 <p align="center">
@@ -146,3 +147,5 @@ Pipedream, Inc. — San Francisco, CA
 <p align="center">
 <a href="https://twitter.com/PipedreamHQ">Twitter</a>  <a href="https://pipedream.com/community">Community</a>  <a href="https://docs.pipedream.com/">Docs</a> <a href="https://pipedream.com/terms">Terms</a> <a href="https://pipedream.com/privacy">Privacy</a>
 </p>
+
+___
