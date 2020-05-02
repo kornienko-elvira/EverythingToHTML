@@ -1,6 +1,15 @@
+<p align="center">
+    <img width="80" height="80" src="https://github.com/kornienko-elvira/EverythingToHTML/blob/master/RSS/Generic_Feed-icon.svg.png">    </p>
 <h1 align="center"><strong>RSS for Hackers</strong></h1>
-    
+
 <p align="center">Patterns for processing and producing RSS feeds</p>
+
+<a align="left" width="100">asdfsad</a>
+
+<a align="center" width="100">asdfsad</a>
+
+<a align="right" width="100">asdfsad</a>
+
 
 ## Getting Started
 If you want to process an RSS feed programmatically, you have to run code to poll the feed and keep track of items already processed. This isn't hard to write, but it's often not core to your app's logic. **You probably just want to run code on each new item in the feed.**
