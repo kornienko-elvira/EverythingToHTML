@@ -1,13 +1,13 @@
 <p align="center">
-    <img width="80" height="80" src="https://github.com/kornienko-elvira/EverythingToHTML/blob/master/RSS/Generic_Feed-icon.svg.png">    </p>
+    <img width="80" height="80" src="./RSS/Generic_Feed-icon.svg.png">    </p>
 <h1 align="center"><strong>RSS for Hackers</strong></h1>
 
 <p align="center">Patterns for processing and producing RSS feeds</p>
 
 <p align="center">
-    <img width="30%" src="./RSS/GettingStarted.png">
-    <img width="30%" src="./RSS/RestApi.png">
-    <img width="30%" src="./RSS/Workflows.png">
+    <a href="https://rss.pipedream.com/#getting-started"><img width="30%" src="./RSS/GettingStarted.png"></a>
+    <a href="https://rss.pipedream.com/#example-workflows"><img width="30%" src="./RSS/RestApi.png"></a>
+    <a href="https://rss.pipedream.com/#apis"><img width="30%" src="./RSS/Workflows.png"></a>
 </p>
 
 
