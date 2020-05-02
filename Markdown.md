@@ -4,11 +4,11 @@
 
 <p align="center">Patterns for processing and producing RSS feeds</p>
 
-<a align="left" width="100">asdfsad</a>
-
-<a align="center" width="100">asdfsad</a>
-
-<a align="right" width="100">asdfsad</a>
+<p align="center">
+    <img width="30%" src="https://github.com/kornienko-elvira/EverythingToHTML/blob/master/RSS/GettingStarted%20.png">
+    <img width="30%" src="https://github.com/kornienko-elvira/EverythingToHTML/blob/master/RSS/GettingStarted%20.png">
+    <img width="30%" src="https://github.com/kornienko-elvira/EverythingToHTML/blob/master/RSS/GettingStarted%20.png">
+</p>
 
 
 ## Getting Started
