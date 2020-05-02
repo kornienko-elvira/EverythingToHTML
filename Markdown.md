@@ -50,9 +50,51 @@ Then, you can trigger a Pipedream workflow— a serverless Node.js script — on
 or process items in your own app using [**the SSE stream or REST API**](https://rss.pipedream.com/#apis) tied to your source.
 
 
-##Example Workflows
+## Example Workflows
 Workflows are linear sequences of steps — just Node.js code —hosted and run by Pipedream.
 
 **You can copy the workflows below and run them in your Pipedream account [**for free**](https://docs.pipedream.com/pricing/)**. When you copy these workflows, you'll be asked to add the URL to your RSS feed, and to name the feed something memorable. This creates an [**RSS event source**](https://rss.pipedream.com/#getting-started) and runs your workflow every time an item is added to your feed.
 
 If you already created RSS source, and want to run a workflow on that same feed, you can click the **Select Another Trigger** button and choose from any event source already running in your account.
+
+They should work as is, but you can modify them in any way. For example, you can add a step to [**run any Node.js code**](https://docs.pipedream.com/workflows/steps/code/) or use [**pre-built functions**](https://docs.pipedream.com/workflows/steps/actions/) to send data to other destinations.
+
+
+## SSE and REST APIs
+
+Pipedream provides two other interfaces for accessing events produced by sources:
+
++ A private SSE stream specific to your source
++ A REST API
+
+This way, you can run an event source in Pipedream but access its events in your own application.
+
+### SSE
+
+SSE —[**Server-sent events**](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events)—defines a spec for how servers can send events directly to clients that subscribe to those events, similar to [**WebSockets**](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) and related server-to-client push technologies. If you listen for new items using SSE, **you can run any code in your own application, in real time, as soon as those items are added to the feed.**
+
+Streams are private by default. You authenticate by passing your Pipedream API key in the Authorization header:
+
+```js
+$ curl -H "Authorization: Bearer API_KEY" \
+
+https://api.pipedream.com/sources/SOURCE_ID/sse
+```
+
+[**See the Pipedream SSE docs**](https://docs.pipedream.com/api/sse) for more information on authentication, example Node code, and other details on the interface.
+
+### REST API
+
+If you prefer to process items from an RSS feed in batch, you can fetch them using [**Pipedream's REST API**](https://docs.pipedream.com/api/rest/):
+
+```js
+$ curl -H "Authorization: Bearer API_KEY" \
+
+https://api.pipedream.com/v1/sources/SOURCE_ID/events?n=1
+```
+
+Note the?n=1query string. You can vary the number of events returned (most recent first) by setting this param.
+
+## Questions or Feedback?
+
+Please [**reach out**](https://docs.pipedream.com/support/) with any questions or feedback. We're happy to add other RSS-specific developer resources to this list, and we'd love to hear what can be improved about event sources or the example workflows.
