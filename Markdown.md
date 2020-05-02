@@ -6,8 +6,8 @@
 
 <p align="center">
     <a href="#getting-started"><img width="30%" src="./RSS/GettingStarted.png"></a>
-    <a href="#example-workflows"><img width="30%" src="./RSS/RestApi.png"></a>
-    <a href="#apis"><img width="30%" src="./RSS/Workflows.png"></a>
+    <a href="#example-workflows"><img width="30%" src="./RSS/Workflows.png"></a>
+    <a href="##sse-and-rest-apis"><img width="30%" src="./RSS/RestApi.png"></a>
 </p>
 
 
