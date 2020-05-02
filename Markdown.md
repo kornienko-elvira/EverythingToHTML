@@ -21,7 +21,9 @@ Then, you can process items from your event source in 3 ways:
 + Access items in batch using Pipedream's REST API
 To get started, [**create a new RSS source in the Pipedream UI**](https://pipedream.com/sources?action=create&url=https%3A%2F%2Fgithub.com%2FPipedreamHQ%2Fpipedream%2Fblob%2Fmaster%2Fcomponents%2Frss%2Frss.js&app=none). Name the source and add your feed URL:
 
-![image](https://rss.pipedream.com/img/rss-source-in-ui.2832e34f.png){:height="50%" width="50%"}
+<p align="center">
+    <img  alt="RSS Source" width="80%" src="https://rss.pipedream.com/img/rss-source-in-ui.2832e34f.png">
+</p>
 
 You can also visit **https://pipedream.com/sourcesand** click theCreate Sourcebutton, then choose the rss/rss.js source from the modal that appears.
 
@@ -103,9 +105,6 @@ Please [**reach out**](https://docs.pipedream.com/support/) with any questions o
 
 
 ___
-<p align="center">
-   <img  width="460" height="300" src="http://www.fillmurray.com/460/300">
-</p>
 
-Pipedream, Inc. — San Francisco, CA                                 [Twitter](https://twitter.com/PipedreamHQ)  [Community](Time elasped = 43958934[µs])  [Docs](https://docs.pipedream.com/) [Terms](https://pipedream.com/terms) [Privacy](https://pipedream.com/privacy)
+<p align="center">Pipedream, Inc. — San Francisco, CA                                <p align="right"> [Twitter](https://twitter.com/PipedreamHQ)  [Community](https://pipedream.com/community)  [Docs](https://docs.pipedream.com/) [Terms](https://pipedream.com/terms) [Privacy](https://pipedream.com/privacy)
 
