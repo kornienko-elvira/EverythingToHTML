@@ -4,4 +4,55 @@ Patterns for processing and producing RSS feeds
 ## Getting Started
 If you want to process an RSS feed programmatically, you have to run code to poll the feed and keep track of items already processed. This isn't hard to write, but it's often not core to your app's logic. **You probably just want to run code on each new item in the feed.**
 
-sadfsdf
+``` js
+    // Don't care how I get feed
+    
+    for (const item of feed) {
+      // Just want to run code
+    }
+```
+
+Pipedream lets you treat an RSS feed as an [**event source**](https://docs.pipedream.com/event-sources/). Pipedream runs the code to poll the feed, emitting new items as the feed produces them:
+
+Then, you can process items from your event source in 3 ways:
+
++ Subscribe to a private SSE stream, which publishes items in real time
++ Trigger a Pipedream workflow for each item, running hosted Node.js code (also real time)
++ Access items in batch using Pipedream's REST API
+To get started, [**create a new RSS source in the Pipedream UI**](https://pipedream.com/sources?action=create&url=https%3A%2F%2Fgithub.com%2FPipedreamHQ%2Fpipedream%2Fblob%2Fmaster%2Fcomponents%2Frss%2Frss.js&app=none). Name the source and add your feed URL:
+
+![image](https://rss.pipedream.com/img/rss-source-in-ui.2832e34f.png)
+
+You can also visit **https://pipedream.com/sourcesand** click theCreate Sourcebutton, then choose the rss/rss.js source from the modal that appears.
+
+If you don't have a feed handy, you can use **https://rss.m.pipedream.net**. This generates a new, random item once every 15 minutes.
+
+You can also create an event source using the Pipedream CLI:
+
+```js
+  
+  $ curl https://cli.pipedream.com/install | sh
+  $ pd deploy # Select the rss source, enter your URL
+  
+```
+
+Once deployed, you can retrieve items emitted by the source using the pd eventscommand:
+
+```js
+  
+$ pd events -n 1 sample-feed# Retrieve the newest item
+$ pd events -f sample-feed# Tail the feed in real time
+  
+```
+
+Then, you can trigger a Pipedream workflow— a serverless Node.js script — on every event:
+
+or process items in your own app using [**the SSE stream or REST API**](https://rss.pipedream.com/#apis) tied to your source.
+
+
+##Example Workflows
+Workflows are linear sequences of steps — just Node.js code —hosted and run by Pipedream.
+
+**You can copy the workflows below and run them in your Pipedream account [**for free**](https://docs.pipedream.com/pricing/)**. When you copy these workflows, you'll be asked to add the URL to your RSS feed, and to name the feed something memorable. This creates an [**RSS event source**](https://rss.pipedream.com/#getting-started) and runs your workflow every time an item is added to your feed.
+
+If you already created RSS source, and want to run a workflow on that same feed, you can click the **Select Another Trigger** button and choose from any event source already running in your account.
