@@ -55,6 +55,8 @@ Workflows are linear sequences of steps — just Node.js code —hosted and run 
 
 If you already created RSS source, and want to run a workflow on that same feed, you can click the **Select Another Trigger** button and choose from any event source already running in your account.
 
+![image](https://rss.pipedream.com/img/select-another-trigger.c6bdbbb5.png)
+
 They should work as is, but you can modify them in any way. For example, you can add a step to [**run any Node.js code**](https://docs.pipedream.com/workflows/steps/code/) or use [**pre-built functions**](https://docs.pipedream.com/workflows/steps/actions/) to send data to other destinations.
 
 
@@ -96,3 +98,14 @@ Note the?n=1query string. You can vary the number of events returned (most recen
 ## Questions or Feedback?
 
 Please [**reach out**](https://docs.pipedream.com/support/) with any questions or feedback. We're happy to add other RSS-specific developer resources to this list, and we'd love to hear what can be improved about event sources or the example workflows.
+
+
+
+
+___
+<p align="center">
+   <img  width="460" height="300" src="http://www.fillmurray.com/460/300">
+</p>
+
+Pipedream, Inc. — San Francisco, CA                                 [Twitter](https://twitter.com/PipedreamHQ)  [Community](Time elasped = 43958934[µs])  [Docs](https://docs.pipedream.com/) [Terms](https://pipedream.com/terms) [Privacy](https://pipedream.com/privacy)
+
