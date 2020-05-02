@@ -30,19 +30,17 @@ If you don't have a feed handy, you can use **https://rss.m.pipedream.net**. Thi
 You can also create an event source using the Pipedream CLI:
 
 ```js
-  
   $ curl https://cli.pipedream.com/install | sh
-  $ pd deploy # Select the rss source, enter your URL
   
+  $ pd deploy # Select the rss source, enter your URL
 ```
 
 Once deployed, you can retrieve items emitted by the source using the pd eventscommand:
 
 ```js
-  
 $ pd events -n 1 sample-feed# Retrieve the newest item
+
 $ pd events -f sample-feed# Tail the feed in real time
-  
 ```
 
 Then, you can trigger a Pipedream workflow— a serverless Node.js script — on every event:
