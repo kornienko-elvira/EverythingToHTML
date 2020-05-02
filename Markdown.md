@@ -1,4 +1,4 @@
-# RSS for Hackers
+<h1 align="center"><strong>RSS for Hackers</strong></h1>
 Patterns for processing and producing RSS feeds
 
 ## Getting Started
@@ -46,6 +46,10 @@ $ pd events -f sample-feed# Tail the feed in real time
 ```
 
 Then, you can trigger a Pipedream workflow— a serverless Node.js script — on every event:
+
+<p align="center">
+    <img  alt="RSS Source" width="672" src="https://rss.pipedream.com/img/new-workflow-source.9580d516.png">
+</p>
 
 or process items in your own app using [**the SSE stream or REST API**](https://rss.pipedream.com/#apis) tied to your source.
 
