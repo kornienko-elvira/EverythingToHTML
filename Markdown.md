@@ -145,7 +145,8 @@ ___
 Pipedream, Inc. — San Francisco, CA
 </p>
 <p align="center">
-<a href="https://twitter.com/PipedreamHQ">Twitter</a>  <a href="https://pipedream.com/community">Community</a>  <a href="https://docs.pipedream.com/">Docs</a> <a href="https://pipedream.com/terms">Terms</a> <a href="https://pipedream.com/privacy">Privacy</a>
+<a href="https://twitter.com/PipedreamHQ">Twitter</a> | <a href="https://pipedream.com/community">Community</a> | <a href="https://docs.pipedream.com/">Docs</a> | <a href="https://pipedream.com/terms">Terms</a> |
+    <a href="https://pipedream.com/privacy">Privacy</a>
 </p>
 
 ___
