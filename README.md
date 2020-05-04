@@ -11,4 +11,4 @@
 
 ### Writtio
 
-<img alt="Writtio" src="assets/writtio.png" align="center">
+<img alt="Writtio" src="assets/Writto.png" align="center">
