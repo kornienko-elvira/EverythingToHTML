@@ -5,11 +5,11 @@
 + <a href="#writtio"><strong>Writtio</strong></a>
 
 
-### Landing Page
+## Landing Page
 
 <img alt="DataWarehouse" src="assets/desktop-Datawarehouse.jpg" align="center">
 
 
-### Writtio
+## Writtio
 
 <img alt="Writtio" src="assets/Writto.png" align="center">
