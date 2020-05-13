@@ -1,0 +1,329 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dataware House</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script async type="text/javascript" src="./js/slider.js"></script>
+  </head>
+  
+<style>
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.text-center {
+  text-align: center;
+}
+.__card_container {
+  overflow: hidden;
+  padding: 10px;
+}
+.__card-slider {
+  width: 320px;
+  position: relative;
+  overflow: visible;
+  margin: 0 auto;
+}
+.__card-slider_list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.__card-slider_card {
+  width: 320px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+.__card-slider_card.active-out {
+  animation: activeOutLeft 0.5s ease-in-out;
+}
+.active-in ~ .__card-slider_card.active-out {
+  animation: activeOutRight 0.5s ease-in-out;
+}
+.active ~ .__card-slider_card {
+  margin-right: 0;
+}
+.__card-slider_card.active {
+  transform: scale(1);
+  z-index: 3;
+  margin: 0;
+}
+.__card-slider_card.active-in {
+  animation: activeInLeft 0.5s ease-in-out;
+}
+.active-out ~ .__card-slider_card.active-in {
+  animation: activeInRight 0.5s ease-in-out;
+}
+.__card_panel {
+  background: white;
+  padding: 15px;
+  margin:0 10px;
+  box-shadow: 0 2px 50px -20px rgba(40, 52, 87, 0.25);
+  height: 100%;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.__card_panel ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 30px 5px;
+}
+.__card_panel ul li {
+  padding: 10px 15px;
+  border-top: 1px solid #eee;
+}
+.__card_panel ul li span {
+  float: right;
+}
+.__card_panel ul li span.no {
+  color: #ccc;
+}
+@keyframes activeInRight {
+  0% {
+    transform: scale(0.8);
+    z-index: 2;
+  }
+  50% {
+    transform: translateX(20%) scale(0.9);
+    z-index: 3;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+@keyframes activeOutLeft {
+  0% {
+    transform: scale(1);
+    z-index: 3;
+  }
+  50% {
+    transform: translateX(-20%) scale(0.9);
+    z-index: 2;
+  }
+  100% {
+    transform: translateX(0) scale(0.8);
+  }
+}
+@keyframes activeInLeft {
+  0% {
+    transform: scale(0.8);
+    z-index: 2;
+  }
+  50% {
+    transform: translateX(-20%) scale(0.9);
+    z-index: 3;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+@keyframes activeOutRight {
+  0% {
+    transform: scale(1);
+    z-index: 3;
+  }
+  50% {
+    transform: translateX(20%) scale(0.9);
+    z-index: 2;
+  }
+  100% {
+    transform: translateX(0) scale(0.8);
+  }
+}
+.cardHeaderContainer {
+  position: relative;
+}
+.cardHeaderImg {
+  width: 100%;
+}
+.__card_Title {
+  position: absolute;
+  font-size: 20px;
+  width: 100%;
+  top: 75px;
+}
+.__card_SubTitle {
+  font-size: 18px;
+}
+.__card_description {
+  font-size: 12px;
+  line-height: 2;
+}
+.__card_getting_started {
+    font-size: 16px;
+    color: #FBB03B!important;
+    cursor: pointer;
+    text-decoration: none!important;
+}
+.__card_getting_started:hover {
+    opacity: 0.7;
+}
+.__card_slide_btn {
+  padding-top: 20px;
+}
+.__card_slide_previous,.__card_slide_next {
+  background-color: transparent;
+  border: none;
+}
+._img_card_rightArrow, ._img_card_leftArrow {
+  margin: 0px 10px;
+  width: 30px;
+  height: 15px;
+}
+._img_card_rightArrow:hover, ._img_card_leftArrow:hover {
+  width: 40px;
+  height: 15px;
+  opacity: 0.5;
+}
+</style>
+<body>
+<div class="__card_container">
+<div class="__card-slider">
+  <ul class="__card-slider_list">
+    <li class="__card-slider_card active">
+      <div class="__card_panel">
+        <div class="cardHeaderContainer">
+          <img class="cardHeaderImg" src="https://images.clickfunnels.com/d8/4300369b10451f86f49acbec1ab2d3/cardImg1.png" alt="CardHeader">  
+          <p class="text-white text-center __card_Title">Preparación para TKT</p>
+        </div>
+        <ul>
+          <p class="__card_SubTitle">Preparación<br>para TKT</p>
+          <p class="__card_description">Este curso te ayudará a perfeccionar tus
+            conocimientos para presentar y aprobar el Teaching 
+            Knowledge Test.</p>
+          <a class="__card_getting_started">Get Started&nbsp;&nbsp;<span><svg xmlns="http://www.w3.org/2000/svg" width="23.296" height="12.47" viewBox="0 0 23.296 12.47">            <g id="Group_808" data-name="Group 808" transform="translate(22.334 13.045) rotate(180)">              <path id="Path_105" data-name="Path 105" d="M0,0H20.748" transform="translate(0.586 6.679)" fill="none" stroke="#fbb03b" stroke-linecap="round" stroke-width="2"/>              <path id="Path_106" data-name="Path 106" d="M0,5.99,4.741,0,9.514,5.853" transform="translate(0.063 11.512) rotate(-89)" fill="none" stroke="#fbb03b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>           </g>          </svg></span>
+          </a>
+        </ul>
+      </div>
+    </li>
+    <li class="__card-slider_card">
+      <div class="__card_panel">
+        <div class="cardHeaderContainer">
+          <img class="cardHeaderImg" src="https://images.clickfunnels.com/d8/4300369b10451f86f49acbec1ab2d3/cardImg1.png" alt="CardHeader">  
+          <p class="text-white text-center __card_Title">Enseñanza del Inglés</p>
+        </div>
+        <ul>
+          <p class="__card_SubTitle">Diseño Instruccional para la<br>Enseñanza del Inglés</p>
+          <p class="__card_description">Este curso te ayudará a planificar los recursos,
+            actividades y evaluaciones necesarias para una correcta 
+            enseñanza del idioma Inglés.</p>
+          <a class="__card_getting_started">Get Started&nbsp;&nbsp;<span><svg xmlns="http://www.w3.org/2000/svg" width="23.296" height="12.47" viewBox="0 0 23.296 12.47">            <g id="Group_808" data-name="Group 808" transform="translate(22.334 13.045) rotate(180)">              <path id="Path_105" data-name="Path 105" d="M0,0H20.748" transform="translate(0.586 6.679)" fill="none" stroke="#fbb03b" stroke-linecap="round" stroke-width="2"/>              <path id="Path_106" data-name="Path 106" d="M0,5.99,4.741,0,9.514,5.853" transform="translate(0.063 11.512) rotate(-89)" fill="none" stroke="#fbb03b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>           </g>          </svg></span>
+          </a>
+        </ul>
+      </div>
+    </li>
+    <li class="__card-slider_card">
+      <div class="__card_panel">
+        <div class="cardHeaderContainer">
+          <img class="cardHeaderImg" src="https://images.clickfunnels.com/d8/4300369b10451f86f49acbec1ab2d3/cardImg1.png" alt="CardHeader">  
+          <p class="text-white text-center __card_Title">Programación</p>
+        </div>
+        <ul>
+          <p class="__card_SubTitle">Fundamentos<br>de Programación</p>
+          <p class="__card_description">Con este curso podrás familiarizarte con los conceptos 
+            básicos comunes de todos los programas y aprenderás los 
+            fundamentos y lógicas detrás de cada línea de código</p>
+          <a class="__card_getting_started">Get Started&nbsp;&nbsp;<span><svg xmlns="http://www.w3.org/2000/svg" width="23.296" height="12.47" viewBox="0 0 23.296 12.47">            <g id="Group_808" data-name="Group 808" transform="translate(22.334 13.045) rotate(180)">              <path id="Path_105" data-name="Path 105" d="M0,0H20.748" transform="translate(0.586 6.679)" fill="none" stroke="#fbb03b" stroke-linecap="round" stroke-width="2"/>              <path id="Path_106" data-name="Path 106" d="M0,5.99,4.741,0,9.514,5.853" transform="translate(0.063 11.512) rotate(-89)" fill="none" stroke="#fbb03b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>           </g>          </svg></span>
+          </a>
+        </ul>
+      </div>
+    </li>
+    <li class="__card-slider_card">
+      <div class="__card_panel">
+        <div class="cardHeaderContainer">
+          <img class="cardHeaderImg" src="https://images.clickfunnels.com/d8/4300369b10451f86f49acbec1ab2d3/cardImg1.png" alt="CardHeader">  
+          <p class="text-white text-center __card_Title">Sistemas de Gestión</p>
+        </div>
+        <ul>
+          <p class="__card_SubTitle">Sistemas de Gestión<br>para el Aprendizaje</p>
+          <p class="__card_description">Este curso te ayudará a perfeccionar tus 
+            conocimientos para presentar y aprobar el Teaching 
+            Knowledge Test.</p>
+          <a class="__card_getting_started">Get Started&nbsp;&nbsp;<span><svg xmlns="http://www.w3.org/2000/svg" width="23.296" height="12.47" viewBox="0 0 23.296 12.47">            <g id="Group_808" data-name="Group 808" transform="translate(22.334 13.045) rotate(180)">              <path id="Path_105" data-name="Path 105" d="M0,0H20.748" transform="translate(0.586 6.679)" fill="none" stroke="#fbb03b" stroke-linecap="round" stroke-width="2"/>              <path id="Path_106" data-name="Path 106" d="M0,5.99,4.741,0,9.514,5.853" transform="translate(0.063 11.512) rotate(-89)" fill="none" stroke="#fbb03b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>           </g>          </svg></span>
+          </a>
+        </ul>
+      </div>
+    </li>
+    <li class="__card-slider_card">
+      <div class="__card_panel">
+        <div class="cardHeaderContainer">
+          <img class="cardHeaderImg" src="https://images.clickfunnels.com/d8/4300369b10451f86f49acbec1ab2d3/cardImg1.png" alt="CardHeader">  
+          <p class="text-white text-center __card_Title">Desarrollo de<br>Aplicaciones</p>
+        </div>
+        <ul>
+          <p class="__card_SubTitle">Desarrollo<br>de Aplicaciones:</p>
+          <p class="__card_description">Este curso te ayudará a perfeccionar tus 
+            conocimientos para presentar y aprobar el Teaching 
+            Knowledge Test.</p>
+          <a class="__card_getting_started">Get Started&nbsp;&nbsp;<span><svg xmlns="http://www.w3.org/2000/svg" width="23.296" height="12.47" viewBox="0 0 23.296 12.47">            <g id="Group_808" data-name="Group 808" transform="translate(22.334 13.045) rotate(180)">              <path id="Path_105" data-name="Path 105" d="M0,0H20.748" transform="translate(0.586 6.679)" fill="none" stroke="#fbb03b" stroke-linecap="round" stroke-width="2"/>              <path id="Path_106" data-name="Path 106" d="M0,5.99,4.741,0,9.514,5.853" transform="translate(0.063 11.512) rotate(-89)" fill="none" stroke="#fbb03b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>           </g>          </svg></span>
+          </a>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+  
+  <div class="__card_slide_btn">
+    <button class="__card_slide_previous"><img class="_img_card_leftArrow" alt="Prev" src="https://images.clickfunnels.com/ce/786351bb3f46bbb25d14d7ba7e55fd/cardLeftArrow---Copy.png"></button>
+    <button class="__card_slide_next"><img class="_img_card_rightArrow" alt="Next" src="https://images.clickfunnels.com/82/6c8eadd2b64e8baf2726583123c8d8/cardRightArrow.png"></button>
+  </div>
+</div>
+</body>
+<script>
+const totalCards = $('.__card-slider_card').length;
+const cardWidth = $('.__card-slider_card:not(.active)').width();
+const activeCardWidth = $('.__card-slider_card.active').width();
+
+goToCard($('.__card-slider_card.active'));
+
+$('.__card-slider_card').click((e) => {
+  let $currentCard = $(e.target).closest('.__card-slider_card');
+  goToCard($currentCard); 
+});
+
+$('.__card_slide_previous').click(goToPreviousCard);
+$('.__card_slide_next').click(goToNextCard);
+
+function goToCard($card) {
+  
+  if (!$card.hasClass('active')) {
+      $('.active-out, .active-in').removeClass('active-out active-in');
+    $('.__card-slider_card.active').addClass('active-out').removeClass('active');
+    $card.closest('.__card-slider_card').addClass('active active-in');
+  }
+  
+  let currentPos = $('.__card-slider_card').index($card);
+  let scrollPos = cardWidth * currentPos;
+
+  $('.__card-slider_list').css({
+      transform: 'translateX(-'+scrollPos+'px)'
+  }, 200);
+}
+
+function goToNextCard() {
+  let $nextCard = $('.__card-slider_card.active').next('.__card-slider_card');
+  if ($nextCard.length) {
+    goToCard($nextCard);
+  }
+}
+function goToPreviousCard() {
+  let $previousCard = $('.__card-slider_card.active').prev('.__card-slider_card');
+  if ($previousCard.length) {
+    goToCard($previousCard);
+  }
+}
+</script>
+</html>
