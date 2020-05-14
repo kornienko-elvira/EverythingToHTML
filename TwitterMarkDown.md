@@ -42,7 +42,7 @@ When you create a Twitter bot, you typically have to sign up for a Twitter devel
 ```js
 // Don't care how I get tweets
 for (const tweet of tweets) {
-// Just want to run code
+    // Just want to run code
 }
 ```
 
@@ -103,23 +103,20 @@ https://api.pipedream.com/sources/SOURCE_ID/sse
 
 ### REST API
 
-If you prefer to process items from an RSS feed in batch, you can fetch them using [**Pipedream's REST API**](https://docs.pipedream.com/api/rest/):
+If you prefer to process tweets in batch, you can fetch them using [**Pipedream's REST API**](https://docs.pipedream.com/api/rest/):
 
 ```js
 $ curl -H "Authorization: Bearer API_KEY" \
 
-https://api.pipedream.com/v1/sources/SOURCE_ID/events?n=1
+https://api.pipedream.com/v1/sources/SOURCE_ID/event_summaries?limit=1
 ```
 
-Note the?n=1query string. You can vary the number of events returned (most recent first) by setting this param.
+Note the?limit=1query string. You can vary the number of events returned (most recent first) by setting this param.
 
-## Questions or Feedback?
+Please [**reach out**](https://docs.pipedream.com/support/) with any questions or feedback. We're happy to add other Twitter-specific developer resources to this list, and we'd love to hear what can be improved about event sources or the example workflows.
+    
+&nbsp;&nbsp;
 
-Please [**reach out**](https://docs.pipedream.com/support/) with any questions or feedback. We're happy to add other RSS-specific developer resources to this list, and we'd love to hear what can be improved about event sources or the example workflows.
-    
-    
-&nbsp;&nbsp;    
-&nbsp;&nbsp;    
 ___
 
 <p align="center">
