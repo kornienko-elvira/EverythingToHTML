@@ -11,96 +11,73 @@
 </p>
 
 &nbsp;&nbsp;
-## Getting Started
-If you want to process an RSS feed programmatically, you have to run code to poll the feed and keep track of items already processed. This isn't hard to write, but it's often not core to your app's logic. **You probably just want to run code on each new item in the feed.**
 
-``` js
-    // Don't care how I get feed
-    
-    for (const item of feed) {
-      // Just want to run code
-    }
-```
-
-Pipedream lets you treat an RSS feed as an [**event source**](https://docs.pipedream.com/event-sources/). Pipedream runs the code to poll the feed, emitting new items as the feed produces them:
-
-<p align="center">
-    <img width="100%" src="./RSS/pipedream.png">
-</p>
-
-Then, you can process items from your event source in 3 ways:
-
-+ Subscribe to a private SSE stream, which publishes items in real time
-+ Trigger a Pipedream workflow for each item, running hosted Node.js code (also real time)
-+ Access items in batch using Pipedream's REST API
-To get started, [**create a new RSS source in the Pipedream UI**](https://pipedream.com/sources?action=create&url=https%3A%2F%2Fgithub.com%2FPipedreamHQ%2Fpipedream%2Fblob%2Fmaster%2Fcomponents%2Frss%2Frss.js&app=none). Name the source and add your feed URL:
-
-<p align="center">
-    <kbd><img  alt="RSS Source in Pipedream UI" width="672" src="https://rss.pipedream.com/img/rss-source-in-ui.2832e34f.png"></kbd>
-</p>
-
-You can also visit **https://pipedream.com/sourcesand** click theCreate Sourcebutton, then choose the rss/rss.js source from the modal that appears.
-
-If you don't have a feed handy, you can use **https://rss.m.pipedream.net**. This generates a new, random item once every 15 minutes.
-
-You can also create an event source using the Pipedream CLI:
-
-```js
-  $ curl https://cli.pipedream.com/install | sh
-  
-  $ pd deploy # Select the rss source, enter your URL
-```
-
-Once deployed, you can retrieve items emitted by the source using the pd eventscommand:
-
-```js
-$ pd events -n 1 sample-feed# Retrieve the newest item
-
-$ pd events -f sample-feed# Tail the feed in real time
-```
-
-Then, you can trigger a Pipedream workflow— a serverless Node.js script — on every event:
-
-<p align="center">
-    <kbd><img  alt="New workflow source" width="672" src="https://rss.pipedream.com/img/new-workflow-source.9580d516.png"></kbd>
-</p>
-
-or process items in your own app using [**the SSE stream or REST API**](https://rss.pipedream.com/#apis) tied to your source.
-
-&nbsp;&nbsp;
 ## Example Workflows
 Workflows are linear sequences of steps — just Node.js code —hosted and run by Pipedream.
 
 **You can copy the workflows below and run them in your Pipedream account** [**for free**](https://docs.pipedream.com/pricing/ ). They run code on new tweets and interact with the Twitter API in creative ways. You can modify or extend them in any way you'd like, [**running your own Node code**](https://docs.pipedream.com/workflows/steps/code/) or using [**pre-built functions**](https://docs.pipedream.com/workflows/steps/actions/) to connect to [**200+ integrated apps**](https://docs.pipedream.com/apps/all-apps/).
 
-On copy, you'll be asked to create a [**Twitter event source**](#) that triggers your workflow on new tweets matching your target search.
+On copy, you'll be asked to create a [**Twitter event source**](#getting-started) that triggers your workflow on new tweets matching your target search.
 
 A single Twitter source can trigger multiple workflows. If you already created a source you want to use as a trigger, click **Select Another Trigger** near the bottom-left of the source selector.
 
-If you already created RSS source, and want to run a workflow on that same feed, you can click the **Select Another Trigger** button and choose from any event source already running in your account.
 
-<p align="center">
-    <kbd><img  alt="Select Another Trigger button" width="672" src="https://rss.pipedream.com/img/select-another-trigger.c6bdbbb5.png"></kbd>
-</p>
-
-They should work as is, but you can modify them in any way. For example, you can add a step to [**run any Node.js code**](https://docs.pipedream.com/workflows/steps/code/) or use [**pre-built functions**](https://docs.pipedream.com/workflows/steps/actions/) to send data to other destinations.
-
-<p align="center">
-    <a alt="RSS to Email" href="https://pipedream.com/@dylburger/rss-to-email-p_NMCqyV/readme"><img width="40%" src="./RSS/1.png"></a>
-    <a alt="RSS to Twitter" href="https://pipedream.com/@dylan/rss-to-twitter-p_5VCkQ7/readme"><img width="40%" src="./RSS/2.png"></a>
-    <a alt="RSS to AWS SQS" href="https://pipedream.com/@dylburger/rss-aws-sqs-p_D1CDjB/readme"><img width="40%" src="./RSS/3.png"></a>
-    <a alt="RSS to AWS EventBridge" href="https://pipedream.com/@dylburger/rss-aws-eventbridge-event-bus-p_JZCk29/readme"><img width="40%" src="./RSS/4.png"></a>
-    <a alt="RSS to AWS lambda" href="https://pipedream.com/@dylburger/rss-aws-lambda-p_ZJC9BG/readme"><img width="40%" src="./RSS/5.png"></a>
-    <a alt="RSS to Webhook" href="https://pipedream.com/@dylburger/rss-http-request-p_MOCq8K/readme"><img width="40%" src="./RSS/6.png"></a>
-    <a alt="RSS to Slack" href="https://pipedream.com/@dylburger/rss-slack-p_YyCDyK/readme"><img width="40%" src="./RSS/7.png"></a>
-    <a alt="RSS to Discord" href="https://pipedream.com/@dylburger/rss-discord-p_7NCWrm/readme"><img width="40%" src="./RSS/8.png"></a>
-    <a alt="RSS to Telegram" href="https://pipedream.com/@dylburger/rss-telegram-p_PACwrm/readme"><img width="40%" src="./RSS/9.png"></a>
-    <a alt="RSS to Google Sheets" href="https://pipedream.com/@dylburger/rss-to-google-sheets-p_ezCqGG/readme"><img width="40%" src="./RSS/10.png"></a>
-    <a alt="HTTP to RSS" href="https://pipedream.com/@dylburger/generate-an-rss-feed-from-http-post-requests-retrieve-via-get-request-p_n1CrQG/readme"><img width="40%" src="./RSS/11.png"></a>
-    <a alt="RSS to Browserless to S3" href="https://pipedream.com/@dylburger/rss-to-browserless-to-s3-p_95Cv5z/readme"><img width="40%" src="./RSS/12.png"></a>
-</p>
 
 &nbsp;&nbsp;
+
+## Twitter Event Sources
+
+Pipedream [**event sources**](https://docs.pipedream.com/event-sources/) emit Twitter events in real time: tweets, follows, likes, and more. Sources can trigger [**Pipedream workflows**](#example-workflows), and can be accessed via [**SSE or REST APIs**](#apis).
+
+Click on a source below to get started.
+
+
+
+Let's see how sources work with an end-to-end example:**running code on new mentions**.
+
+Most Twitter bots react to other tweets. For example, you might want to reply to a user with a specific message every time they mention you. Or you may want to store every tweet with a specific hashtag in an Amazon S3 bucket.
+
+When you create a Twitter bot, you typically have to sign up for a Twitter developer account, create your own app, host it somewhere, and run code to poll for new tweets. This is a means to an end:**all you really want to do is run code on new tweets**.
+
+```js
+// Don't care how I get tweets
+for (const tweet of tweets) {
+// Just want to run code
+}
+```
+
+Pipedream lets you create a stream of tweets you can process programmatically in seconds, avoiding the app setup entirely. These are called [**event sources**](https://docs.pipedream.com/event-sources/).
+
+Pipedream runs the code to poll for new tweets matching your search terms, emitting them as events you can run code on.
+
+<p align="center">
+    <kbd><img alt="Example twitter payload"></kbd>
+</p>
+
+Then, you can immediately process those tweets in a few different ways:
+
++ Trigger a Pipedream workflow for each tweet, running hosted Node.js code in real time
++ Subscribe to a private SSE stream, which also publishes tweets in real time
++ Access tweets in batch using Pipedream's REST API
+
+To get started, [**create a new Twitter search source in the Pipedream UI**](https://pipedream.com/sources?action=create&amp;url=https%3A%2F%2Fgithub.com%2FPipedreamHQ%2Fpipedream%2Fblob%2Fmaster%2Fcomponents%2Ftwitter%2Fsearch-twitter.js&amp;app=twitter&amp;src=twitter.pipedream.com). Name the source, connect your Twitter account, and add your search term:
+
+<p align="center">
+    <kbd><img alt="Twitter Source in Pipedream UI"></kbd>
+</p>
+
+You can also visit [**https://pipedream.com/sources**](https://pipedream.com/sources) and click the **Create Source** button, then choose the **twitter/twitter-search.js** source from the modal that appears.
+
+Then, you can trigger a [**Pipedream workflow**](https://pipedream.com/new) — a serverless Node.js script — on every tweet:
+
+<p align="center">
+    <kbd><img alt="New workflow source"></kbd>
+</p>
+
+or process items in your own app using [**the SSE stream or REST API**](#apis) tied to your source.
+
+&nbsp;&nbsp;
+
 ## SSE and REST APIs
 
 Pipedream provides two other interfaces for accessing events produced by sources:
