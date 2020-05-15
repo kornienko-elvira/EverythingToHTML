@@ -1,13 +1,13 @@
 <p align="center">
-    <img width="80" height="80" src="./RSS/Generic_Feed-icon.svg.png">    </p>
+    <img width="124" height="100" src="../../images/TwitterLogo.png">    </p>
 <h1 align="center"><strong>Twitter Workflow Automation</strong></h1>
 
 <p align="center">Patterns for processing streams of tweets and interacting with the Twitter API</p>
 
 <p align="center">
-    <a alt="Getting Started" href="#getting-started"><img width="30%" src="./RSS/GettingStarted.png"></a>
-    <a alt="Example Worksflows" href="#example-workflows"><img width="30%" src="./RSS/Workflows.png"></a>
-    <a "SSE + REST API" href="#sse-and-rest-apis"><img width="30%" src="./RSS/RestApi.png"></a>
+    <a alt="Getting Started" href="#example-workflows"><img width="30%" src="../../images/ExampleWorkflow.png"></a>
+    <a alt="Example Worksflows" href="#twitter-event-sources"><img width="30%" src="../../images/TwitterEventSources.png"></a>
+    <a "SSE + REST API" href="#sse-and-rest-apis"><img width="30%" src="../../images/SSE_RESTAPI.png"></a>
 </p>
 
 &nbsp;&nbsp;
@@ -21,7 +21,10 @@ On copy, you'll be asked to create a [**Twitter event source**](#getting-started
 
 A single Twitter source can trigger multiple workflows. If you already created a source you want to use as a trigger, click **Select Another Trigger** near the bottom-left of the source selector.
 
-
+<p align="center">
+    <img alt="Twitter to Email" src="../../images/T2Em.png" width="45%">
+    <img alt="Twitter to Webhook" src="../../images/T2We.png" width="45%">
+</p>
 
 &nbsp;&nbsp;
 
