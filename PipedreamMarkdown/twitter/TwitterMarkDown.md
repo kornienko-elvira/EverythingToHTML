@@ -17,7 +17,7 @@ Workflows are linear sequences of steps — just Node.js code —hosted and run 
 
 **You can copy the workflows below and run them in your Pipedream account** [**for free**](https://docs.pipedream.com/pricing/ ). They run code on new tweets and interact with the Twitter API in creative ways. You can modify or extend them in any way you'd like, [**running your own Node code**](https://docs.pipedream.com/workflows/steps/code/) or using [**pre-built functions**](https://docs.pipedream.com/workflows/steps/actions/) to connect to [**200+ integrated apps**](https://docs.pipedream.com/apps/all-apps/).
 
-On copy, you'll be asked to create a [**Twitter event source**](#getting-started) that triggers your workflow on new tweets matching your target search.
+On copy, you'll be asked to create a [**Twitter event source**](#twitter-event-sources) that triggers your workflow on new tweets matching your target search.
 
 A single Twitter source can trigger multiple workflows. If you already created a source you want to use as a trigger, click **Select Another Trigger** near the bottom-left of the source selector.
 
