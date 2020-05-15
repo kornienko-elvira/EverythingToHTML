@@ -85,7 +85,7 @@ Pipedream lets you create a stream of tweets you can process programmatically in
 Pipedream runs the code to poll for new tweets matching your search terms, emitting them as events you can run code on.
 
 <p align="center">
-    <img alt="pipeDream" src="../../images/pipeDream.png">
+    <img alt="pipeDream" src="../../images/TwitterPipeDream.png">
 </p>
 
 Then, you can immediately process those tweets in a few different ways:
