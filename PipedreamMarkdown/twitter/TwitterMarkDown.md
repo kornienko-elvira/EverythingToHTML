@@ -50,7 +50,22 @@ Pipedream [**event sources**](https://docs.pipedream.com/event-sources/) emit Tw
 
 Click on a source below to get started.
 
-
+<p align="center">
+    <a href="https://pipedream.com/sources?action=create&amp;url=https%3A%2F%2Fgithub.com%2FPipedreamHQ%2Fpipedream%2Fblob%2Fmaster%2Fcomponents%2Ftwitter%2Fsearch-twitter.js&amp;app=twitter"><img alt="Search Mention" src="../../images/SM.png" width="45%"></a>
+    <a href="https://pipedream.com/sources?action=create&amp;url=https%3A%2F%2Fgithub.com%2FPipedreamHQ%2Fpipedream%2Fblob%2Fmaster%2Fcomponents%2Ftwitter%2Fmy-tweets.js&amp;app=twitter"><img alt="My Tweets" src="../../images/MT.png" width="45%"></a>
+</p>
+<p align="center">
+    <a href="https://pipedream.com/sources?action=create&amp;url=https%3A%2F%2Fgithub.com%2FPipedreamHQ%2Fpipedream%2Fblob%2Fmaster%2Fcomponents%2Ftwitter%2Fnew-follower-of-user.js&amp;app=twitter"><img alt="New Follower for User" src="../../images/NFfU.png" width="45%"></a>
+    <a href="https://pipedream.com/sources?action=create&amp;url=https%3A%2F%2Fgithub.com%2FPipedreamHQ%2Fpipedream%2Fblob%2Fmaster%2Fcomponents%2Ftwitter%2Fnew-follower-of-me.js&amp;app=twitter"><img alt="My New Followers" src="../../images/MNF.png" width="45%"></a>
+</p>
+<p align="center">
+    <a href="https://pipedream.com/sources?action=create&amp;url=https%3A%2F%2Fgithub.com%2FPipedreamHQ%2Fpipedream%2Fblob%2Fmaster%2Fcomponents%2Ftwitter%2Fmy-liked-tweets.js&amp;app=twitter"><img alt="My Liked Tweets" src="../../images/MLT.png" width="45%"></a>
+    <a href="https://pipedream.com/sources?action=create&amp;url=https%3A%2F%2Fgithub.com%2FPipedreamHQ%2Fpipedream%2Fblob%2Fmaster%2Fcomponents%2Ftwitter%2Ftweets-liked-by-user.js&amp;app=twitter"><img alt="Tweets Liked by User" src="../../images/TLbU.png" width="45%"></a>
+</p>
+<p align="center">
+    <a href="https://pipedream.com/sources?action=create&amp;url=https%3A%2F%2Fgithub.com%2FPipedreamHQ%2Fpipedream%2Fblob%2Fmaster%2Fcomponents%2Ftwitter%2Fuser-tweets.js&amp;app=twitter"><img alt="New Tweets from User" src="../../images/NTfU.png" width="45%"></a>
+    <a href="https://pipedream.com/sources?action=create&amp;url=https%3A%2F%2Fgithub.com%2FPipedreamHQ%2Fpipedream%2Fblob%2Fmaster%2Fcomponents%2Ftwitter%2Fnew-trends-by-geo.js&amp;app=twitter"><img alt="New Trends by Geo" src="../../images/NTbG.png" width="45%"></a>
+</p>
 
 Let's see how sources work with an end-to-end example:**running code on new mentions**.
 
@@ -70,7 +85,7 @@ Pipedream lets you create a stream of tweets you can process programmatically in
 Pipedream runs the code to poll for new tweets matching your search terms, emitting them as events you can run code on.
 
 <p align="center">
-    <kbd><img alt="Example twitter payload"></kbd>
+    <img alt="pipeDream" src="../../images/pipeDream.png">
 </p>
 
 Then, you can immediately process those tweets in a few different ways:
@@ -82,7 +97,7 @@ Then, you can immediately process those tweets in a few different ways:
 To get started, [**create a new Twitter search source in the Pipedream UI**](https://pipedream.com/sources?action=create&amp;url=https%3A%2F%2Fgithub.com%2FPipedreamHQ%2Fpipedream%2Fblob%2Fmaster%2Fcomponents%2Ftwitter%2Fsearch-twitter.js&amp;app=twitter&amp;src=twitter.pipedream.com). Name the source, connect your Twitter account, and add your search term:
 
 <p align="center">
-    <kbd><img alt="Twitter Source in Pipedream UI"></kbd>
+    <kbd><img alt="Twitter Source in Pipedream UI" src="../../images/twitter-source-in-ui.png"></kbd>
 </p>
 
 You can also visit [**https://pipedream.com/sources**](https://pipedream.com/sources) and click the **Create Source** button, then choose the **twitter/twitter-search.js** source from the modal that appears.
@@ -90,7 +105,7 @@ You can also visit [**https://pipedream.com/sources**](https://pipedream.com/sou
 Then, you can trigger a [**Pipedream workflow**](https://pipedream.com/new) — a serverless Node.js script — on every tweet:
 
 <p align="center">
-    <kbd><img alt="New workflow source"></kbd>
+    <kbd><img alt="New workflow source" src="../../images/new-workflow-source.png"></kbd>
 </p>
 
 or process items in your own app using [**the SSE stream or REST API**](#apis) tied to your source.
