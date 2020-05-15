@@ -97,7 +97,7 @@ Then, you can immediately process those tweets in a few different ways:
 To get started, [**create a new Twitter search source in the Pipedream UI**](https://pipedream.com/sources?action=create&amp;url=https%3A%2F%2Fgithub.com%2FPipedreamHQ%2Fpipedream%2Fblob%2Fmaster%2Fcomponents%2Ftwitter%2Fsearch-twitter.js&amp;app=twitter&amp;src=twitter.pipedream.com). Name the source, connect your Twitter account, and add your search term:
 
 <p align="center">
-    <kbd><img alt="Twitter Source in Pipedream UI" src="../../images/twitter-source-in-ui.png"></kbd>
+    <kbd><img alt="Twitter Source in Pipedream UI" width="700" src="../../images/twitter-source-in-ui.png"></kbd>
 </p>
 
 You can also visit [**https://pipedream.com/sources**](https://pipedream.com/sources) and click the **Create Source** button, then choose the **twitter/twitter-search.js** source from the modal that appears.
@@ -105,7 +105,7 @@ You can also visit [**https://pipedream.com/sources**](https://pipedream.com/sou
 Then, you can trigger a [**Pipedream workflow**](https://pipedream.com/new) — a serverless Node.js script — on every tweet:
 
 <p align="center">
-    <kbd><img alt="New workflow source" src="../../images/new-workflow-source.png"></kbd>
+    <kbd><img alt="New workflow source" width="550" src="../../images/new-workflow-source.png"></kbd>
 </p>
 
 or process items in your own app using [**the SSE stream or REST API**](#apis) tied to your source.
@@ -130,7 +130,7 @@ Streams are private by default. You authenticate by passing your Pipedream API k
 ```js
 $ curl -H "Authorization: Bearer API_KEY" \
 
-https://api.pipedream.com/sources/SOURCE_ID/sse
+    https://api.pipedream.com/sources/SOURCE_ID/sse
 ```
 
 [**See the Pipedream SSE docs**](https://docs.pipedream.com/api/sse) for more information on authentication, example Node code, and other details on the interface.
@@ -142,7 +142,7 @@ If you prefer to process tweets in batch, you can fetch them using [**Pipedream'
 ```js
 $ curl -H "Authorization: Bearer API_KEY" \
 
-https://api.pipedream.com/v1/sources/SOURCE_ID/event_summaries?limit=1
+    https://api.pipedream.com/v1/sources/SOURCE_ID/event_summaries?limit=1
 ```
 
 Note the?limit=1query string. You can vary the number of events returned (most recent first) by setting this param.
