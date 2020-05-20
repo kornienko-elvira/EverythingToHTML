@@ -1,12 +1,12 @@
 <p align="center">
-    <img width="124" height="100" src="../../images/twitter/TwitterLogo.png">    </p>
+    <img width="124" height="100" src="/images/twitter/TwitterLogo.png">    </p>
 <h1 align="center"><strong>Twitter Workflow Automation</strong></h1>
 
 <p align="center">Patterns for processing streams of tweets and interacting with the Twitter API</p>
 
 <p align="center">
-    <a href="#example-workflows"><img width="30%" src="../../images/twitter/ExampleWorkflow.png" alt="Getting Started"></a>
-    <a href="#twitter-event-sources"><img width="30%" src="../../images/twitter/TwitterEventSources.png" alt="Example Worksflows"></a>
+    <a href="#example-workflows"><img width="30%" src="/images/twitter/ExampleWorkflow.png" alt="Getting Started"></a>
+    <a href="#twitter-event-sources"><img width="30%" src="/images/twitter/TwitterEventSources.png" alt="Example Worksflows"></a>
     <a href="#sse-and-rest-apis"><img width="30%" src="../../images/twitter/SSE_RESTAPI.png" alt="SSE + REST API"></a>
 </p>
 
