@@ -1,0 +1,457 @@
+@font-face {
+    font-family: "DMSerifDisplay";
+    src: url("./fonts/DMSerifDisplay.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+/* font converted using font-converter.net. thank you! */
+@font-face {
+    font-family: "Halyard";
+    src: url("./fonts/halyard.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    font-family: "ProximaNova"!important;
+}
+u {
+    -webkit-text-underline-position: under;
+    -ms-text-underline-position: below;
+    text-underline-position: under; 
+}
+.fontHal {
+    font-family: "Halyard";
+}
+.fontDMS {
+    font-family: "DMSerifDisplay";
+}
+
+.header {
+    margin: 20px 20px;
+}
+.__header{
+    background-color: white;
+    box-shadow: 0 5px 5px 5px rgba(100,100,100,0.1);
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+.content-wrapper{
+    width: 98%;
+    max-width: 1228px;
+    padding: 1rem;
+    margin: auto;
+}
+.navbar-brand {
+    margin-right: 10%!important;
+}
+.navbar-nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.__btn_HeaderConatct {
+    background-color: #9B9BCA;
+    color: #F2F2F2!important;
+}
+.__btn_HeaderConatct:hover {
+    opacity: 0.8;
+}
+
+.__title {
+    font-family: "DMSerifDisplay";
+    font-size: 4rem;
+    color: #001212;
+}
+.__descriptionContainer {
+    max-width: 450px;
+}
+.__description {
+    font-size: 1rem;
+    color: #76778D;
+}
+
+.__btn_GetStarted {
+    background-color: #1CAD9E;
+    color: #F2F2F2!important;
+    letter-spacing: 0.1rem;
+    border: none;
+}
+.__imgDiagram {
+    position: absolute;
+    width: 250px;
+    bottom: 20px;
+    z-index: -1;
+}
+.__imgVector {
+    position: absolute;
+    width: 50px;
+    top: 150px;
+    left: -40px;
+}
+.__imgVideo {
+    position: absolute;
+    width: 120px;
+    top: 200px;
+}
+.__imgCursor {
+    bottom: 20px;
+    width: 100px;
+    left: -100px;
+    position: absolute;
+}
+
+/*-=====================-*/
+
+.__imgBackYellowCircle {
+    width: 70%;
+    margin: auto;
+}
+.__imgHowItWorks {
+    width: 90%;
+    margin: auto;
+}
+.__card {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 10px rgba(100,100,100,0.1);
+    background-color: white;
+}
+.__cardNumber {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    background-color: rgba(155, 155, 202, 0.2);
+    color: #333333;
+}
+.__cardTitle {
+    color: #001212;
+    font-size: 1.5rem;
+}
+.__cardDescription {
+    color: #696A86;
+}
+
+/*-=====================================-*/
+.__secPlan {
+    background-color: #626780;
+}
+.__planTitle {
+    font-family: "DMSerifDisplay";
+    font-size: 2rem;
+}
+.__planDescription {
+    font-family: "Halyard";
+    color: #EBEBFF;
+    font-size: 0.9rem;
+    line-height: 2rem;
+}
+.__planSubTitle {
+    font-family: "Halyard";
+    font-size: 1.5rem;
+}
+.__planIcon {
+    width: 50px;
+}
+.__div_plan {
+    padding-right: 6rem!important;
+    padding-bottom: 4rem!important;
+}
+.__div_plan_B {
+    padding-right: 8rem!important;
+}
+.__div_plan_C {
+    padding-right: 6rem!important;
+}
+/*-==============================-*/
+.__imgVideoBig {
+    width: 100%;
+    border-radius: 10px;
+    z-index: -1;
+}
+.__imgPlayBtn {
+    width: 70px;
+    position: absolute;
+    top: calc(50% - 35px);
+    left: calc(50% - 35px);
+}
+.__imgPlayBtn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.__secDemoBack {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    border-radius: 10px;
+    background: linear-gradient(68.42deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+.__demoTitle{
+    position: absolute;
+    top: 30px;
+    left: 120px;
+    font-family: "DMSerifDisplay";
+    font-size: 2.25rem;
+}
+
+/*-====================================-*/
+.__smallTitle {
+    font-size: 2.5rem;
+    font-family: "DMSerifDisplay";
+    color: #001212;
+    width: 90%;
+    max-width: 700px;
+}
+.__smallSetupDemoTitle {
+    font-size: 3rem;
+    font-family: "DMSerifDisplay";
+    color: #001212;
+    width: 90%;
+    max-width: 700px;
+}
+.__smallDescription {
+    font-size: 1rem;
+    font-family: "Halyard";
+    color: #76778D;
+    line-height: 2rem;
+    width: 90%;
+    max-width: 620px;
+}
+.__smallSetupDemoDescription {
+    font-size: 1.1rem;
+    font-family: "Halyard";
+    color: #76778D;
+    line-height: 2rem;
+    width: 90%;
+    max-width: 620px;
+}
+.__imgFeature {
+    width: 100%;
+}
+.__featureNumber {
+    font-size: 3rem;
+    font-family: "DMSerifDisplay";
+    color: #9B9BCA;
+    opacity: 0.3;
+}
+.__featureTitle {
+    font-size: 2rem;
+    font-family: "DMSerifDisplay";
+    color: #001212;
+}
+
+/*-====================================-*/
+
+.__imgBackPinkCircle {
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    right: -15%;
+}
+.__learningCard {
+    margin-right: 3rem;
+    padding: 2.5rem;
+    box-shadow: 0 0 10px 10px rgba(100,100,100,0.1);
+    background-color: white;
+}
+.__learningCard_R {
+    margin-left: 3rem;
+    box-shadow: 0 0 10px 10px rgba(100,100,100,0.1);
+    background-color: white;
+}
+.__learningCardTitle {
+    font-size: 1.8rem;
+    font-family: "DMSerifDisplay";
+    color: #001212;
+}
+.__learningCardDescription {
+    max-width: 24rem;
+    font-size: 1rem;
+    font-family: "Halyard";
+    color: #76778D;
+    line-height: 2rem;
+}
+.__BtnRefMore {
+    font-size: 1rem;
+    font-family: "Halyard";
+    background-color: #9B9BCA;
+    border: none;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.__BtnRefMore:hover {
+    opacity: 0px;
+    box-shadow: none;
+}
+.__BtnLearnMore {
+    font-size: 1rem;
+    font-family: "Halyard";
+    background-color: #1CAD9E;
+    border: none;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.__BtnLearnMore:hover {
+    opacity: 0px;
+    box-shadow: none;
+}
+
+/*-====================================-*/
+
+.__comment {
+    background-color: #FFFBED;
+}
+.__commentContainer {
+    width: 100%;
+    max-width: 720px;
+}
+.__commentMain {
+    font-size: 1.8rem;
+    font-family: "DMSerifDisplay";
+    color: #001212;
+}
+.__commentAvator {
+    width: 60px;
+}
+.__commentAvatorName {
+    font-size: 1rem;
+    font-family: "Halyard";
+    color: #001212;
+}
+.__commentAvatorNameDescription {
+    font-size: 0.9rem;
+    font-family: "Halyard";
+    color: #76778D;
+}
+.__5star {
+    font-size: 0.7rem;
+    font-family: "Halyard";
+    line-height: 28px;
+    margin-bottom: 0px;
+    color: #9D9D9D;
+}
+.__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    background-color: #76778D;
+}
+.__dot.active {
+    background-color: #BDBDBD;
+}
+
+/*-====================================-*/
+
+.__secSignup {
+    background-color: #EBEBFF;
+}
+.__secSignupDiv {
+    max-width: 500px!important;
+}
+.secSignupCard {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: white;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+.secSignupItem {
+    font-size: 0.9rem;
+    font-family: "Halyard";
+    color: #76778D;
+}
+.__secSignupInput {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+    font-family: "Halyard";
+    color: #001212;
+}
+.__secSignupInput::placeholder {
+    color: #9D9D9D;
+    font-size: 0.9rem;
+}
+
+/*-====================================-*/
+
+.__secFooter {
+    background-color: #626780;
+}
+.__secFooterItemText {
+    font-size: 1rem;
+    font-family: "Halyard";
+}
+.__secFooterItems {
+    font-size: 0.9rem;
+    font-family: "Halyard";
+    color: #EBEBFF;
+}
+
+/*-====================================-*/
+
+@media (min-width: 768px) { 
+    .__topCard12 {
+        position: absolute;
+        top: 0px;
+    }
+    .__bottomCard34 {
+        position: absolute;
+        bottom: 0px;
+    }
+}
+
+@media (min-width: 992px) { 
+    .__topCard12 {
+        position: absolute;
+        top: 100px;
+    }
+    .__bottomCard34 {
+        position: absolute;
+        bottom: 100px;
+    }
+}
+
+@media (min-width: 1050px) { 
+    .__topCard12 {
+        top: 150px;
+    }
+    .__bottomCard34 {
+        bottom: 150px;
+    }
+}
+@media (max-width: 768px) { 
+    .__demoTitle{
+        top: 20px;
+        left: 100px;
+        font-size: 2rem;
+    }    
+}
+@media (max-width: 623px) { 
+    .__demoTitle{
+        top: 20px;
+        left: 50px;
+        font-size: 1.5rem;
+    }    
+    .__imgPlayBtn {
+        width: 40px;
+        top: calc(50% - 20px);
+        left: calc(50% - 20px);
+    }
+}
