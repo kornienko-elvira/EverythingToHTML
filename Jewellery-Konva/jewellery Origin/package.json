@@ -1,0 +1,44 @@
+{
+  "name": "jewellery",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "fabric": "^3.6.3",
+    "konva": "^6.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-images-upload": "^1.2.8",
+    "react-images-uploading": "^2.1.1",
+    "react-konva": "^16.13.0-2",
+    "react-modal-image": "^2.5.0",
+    "react-scripts": "3.4.1",
+    "react-share": "^4.1.0",
+    "react-share-icons": "^1.1.2",
+    "react-social-icons": "^4.1.0",
+    "use-image": "^1.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
